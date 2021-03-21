@@ -18,14 +18,14 @@ public:
 	ACtsViewerBasePawn();
 
 	// Funzionalita sulle pressioni dei tasti
-	void LMBPremuto();
-	void LMBRilasciato();
-	void MMBPremuto();
-	void MMBRilasciato();
-	void RMBPremuto();
-	void RMBRilasciato();
-	void MouseOrizzontale(float axisvalue);
-	void MouseVerticale(float axisvalue);
+	virtual void LMBPremuto();
+	virtual void LMBRilasciato();
+	virtual void MMBPremuto();
+	virtual void MMBRilasciato();
+	virtual void RMBPremuto();
+	virtual void RMBRilasciato();
+	virtual void MouseOrizzontale(float axisvalue);
+	virtual void MouseVerticale(float axisvalue);
 
 	// Buffer movimenti
 	class MovementBuffer BufferMovimento;

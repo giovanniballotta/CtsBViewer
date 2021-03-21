@@ -31,6 +31,7 @@ float ACtsViewerPawnCamera::GetLunghezzaCorrenteBraccio() const
 void ACtsViewerPawnCamera::SetLunghezzaCorrenteBraccio(float valore)
 {
 	LunghezzaCorrenteBraccio = FMath::Clamp(valore, LunghezzaMinimaBraccio, LunghezzaMassimaBraccio);
+	Braccio->TargetArmLength = LunghezzaCorrenteBraccio;
 }
 
 float ACtsViewerPawnCamera::GetFattoreZoom() const
